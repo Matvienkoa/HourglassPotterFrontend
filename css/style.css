@@ -1,0 +1,347 @@
+/*==================Fonts====================*/
+@font-face {
+    font-family: 'proclamate_lightlight';
+    src: url('../polices/proclamate_light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*===================Page Index==================*/
+#bloc{
+    background-image: url("../images/Mur.jpg");
+    background-size: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.enter{
+    font-family: 'proclamate_lightlight';
+    color: white;
+    position: relative;
+    top: 35%;
+    font-size: 7rem;
+    background-color: transparent;
+    border: none;
+    transition: color 1300ms, font-size 1000ms;
+}
+
+.enter:hover {
+    color: rgb(80, 68, 13);
+    font-size: 8rem;
+}
+
+#entrer {
+    text-decoration: none;
+    color: white;
+}
+
+/*==================Page Points====================*/
+
+#pagePoints{
+    margin: 0;
+    padding: 0;
+    background: url('../images/EcoleT.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+#bloc2{
+    text-align: center;
+}
+
+#template{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/*---------Bloc Global Sablier----------*/
+.sablier{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    animation: apparition 2000ms;
+}
+@keyframes apparition{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*------------Blasons-----------*/
+.blason{
+    width: 100px;
+    height: 120px;
+    transition: opacity 700ms;
+}
+.blason:hover{
+    opacity: 0.6;
+}
+
+/*----------Sablier------------*/
+.hourglass{
+    margin-bottom: -60px;
+    display: flex;
+    flex-direction: column;
+}
+#png{
+    height: 450px;
+    width: 340px;
+    z-index: 1;
+}
+#avancementSerpentard, #avancementSerdaigle, #avancementGryffondor, #avancementPoufsoufle{
+    width: 310px;
+    height: 74px;
+    transform: rotate(-90deg);
+    position: relative;
+    bottom:218px;
+    left: 16px;
+    border-radius: 0%;
+    border: 0 2px 2px 2px solid black;
+    animation: apparition-opacity 2000ms 1000ms;
+}
+@keyframes apparition-opacity{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+progress {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+}
+::-webkit-progress-bar {
+     background-color: transparent;
+}
+progress#avancementSerpentard::-webkit-progress-value  {
+    background-image: repeating-linear-gradient(80deg, rgb(29,116,82) 0px, rgb(29,116,82) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(29,116,82) 0px, rgb(29,116,82) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(29,116,82) 0px, rgb(29,116,82) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(250,248,248),rgb(162,159,159));
+    box-shadow: 10px 0px 8px rgb(29,116,82);
+}
+progress#avancementSerpentard::-moz-progress-bar  {
+    background-image: repeating-linear-gradient(80deg, rgb(29,116,82) 0px, rgb(29,116,82) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(29,116,82) 0px, rgb(29,116,82) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(29,116,82) 0px, rgb(29,116,82) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(250,248,248),rgb(162,159,159));
+    box-shadow: 10px 0px 8px rgb(29,116,82);
+}
+progress#avancementSerdaigle::-webkit-progress-value { 
+    background-image: repeating-linear-gradient(80deg, rgb(0,112,175) 0px, rgb(0,112,175) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(0,112,175) 0px, rgb(0,112,175) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(0,112,175) 0px, rgb(0,112,175) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(250,248,248),rgb(162,159,159));
+    box-shadow: 10px 0px 8px rgb(0,112,175);
+}
+progress#avancementSerdaigle::-moz-progress-bar { 
+    background-image: repeating-linear-gradient(80deg, rgb(0,112,175) 0px, rgb(0,112,175) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(0,112,175) 0px, rgb(0,112,175) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(0,112,175) 0px, rgb(0,112,175) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(250,248,248),rgb(162,159,159));
+    box-shadow: 10px 0px 8px rgb(0,112,175);
+}
+progress#avancementGryffondor::-webkit-progress-value {
+    background-image: repeating-linear-gradient(80deg, rgb(168,25,69) 0px, rgb(168,25,69) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(168,25,69) 0px, rgb(168,25,69) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(168,25,69) 0px, rgb(168,25,69) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(250,248,248),rgb(162,159,159));
+    box-shadow: 10px 0px 8px rgb(168,25,69);
+}
+progress#avancementGryffondor::-moz-progress-bar {
+    background-image: repeating-linear-gradient(80deg, rgb(168,25,69) 0px, rgb(168,25,69) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(168,25,69) 0px, rgb(168,25,69) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(168,25,69) 0px, rgb(168,25,69) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(250,248,248),rgb(162,159,159));
+    box-shadow: 10px 0px 8px rgb(168,25,69);
+}
+progress#avancementPoufsoufle::-webkit-progress-value {
+    background-image: repeating-linear-gradient(80deg, rgb(253,172,43) 0px, rgb(253,172,43) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(253,172,43) 0px, rgb(253,172,43) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(253,172,43) 0px, rgb(253,172,43) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(250,248,248),rgb(162,159,159));
+    box-shadow: 10px 0px 8px rgb(253,172,43);
+}
+progress#avancementPoufsoufle::-moz-progress-bar {
+    background-image: repeating-linear-gradient(80deg, rgb(253,172,43) 0px, rgb(253,172,43) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(228deg, rgb(253,172,43) 0px, rgb(253,172,43) 10px,transparent 10px, transparent 12px),repeating-linear-gradient(127deg, rgb(253,172,43) 0px, rgb(253,172,43) 10px,transparent 10px, transparent 12px),linear-gradient(90deg, rgb(250,248,248),rgb(162,159,159));
+    box-shadow: 10px 0px 8px rgb(253,172,43);
+}
+
+/*------------Scores-----------*/
+.parchemin{
+    width: 150px;
+}
+input{
+    font-family: 'proclamate_lightlight';
+}
+#serpentardPoints, #serdaiglePoints, #gryffondorPoints, #poufsouflePoints{
+    position: relative;
+    bottom: 73px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'proclamate_lightlight';
+    animation: change-color 2000ms 1000ms;
+}
+@keyframes change-color{
+    0% {
+        color: black;
+        font-size: 2.5rem;
+        transform: translateY(0px);
+    }
+    50% {
+        color: yellow;
+        font-size: 4.5rem;
+        transform: translateY(-28px);
+    }
+    100% {
+        color: black;
+        font-size: 2.5rem;
+        transform: translateY(0px);
+    }
+}
+.attributePoints{
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: keep-position 2000ms 1000ms;
+}
+@keyframes keep-position{
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-48px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.inputnumber{
+    margin-bottom: 10px;
+    width: 80px;
+    font-size: 1.3rem;
+}
+#numberpointsSerpentard{
+    background-color: rgba(29,116,82,0.5);
+}
+#numberpointsSerdaigle{
+    background-color: rgba(0,112,175,0.5);
+}
+#numberpointsGryffondor{
+    background-color: rgba(168,25,69,0.5);
+}
+#numberpointsPoufsoufle{
+    background-color: rgba(253,172,43,0.5);
+}
+.btnnumber{
+    font-size: 1.3rem;
+    border-radius: 25px;
+    padding: 4px 8px 1px 8px;
+    color: white;
+    border: none;
+    box-shadow: 2px 4px 4px rgb(99, 96, 96);
+    transition: box-shadow 800ms, font-size 800ms;
+}
+.btnnumber:hover{
+    font-size: 1.33rem;
+    box-shadow: 0px 7px 6px rgb(99, 96, 96);
+}
+#validpointsSerpentard{
+    background-color: rgba(29,116,82,0.8);
+}
+#validpointsSerdaigle{
+    background-color: rgba(0,112,175,0.8);
+}
+#validpointsGryffondor{
+    background-color: rgba(168,25,69,0.8);
+}
+#validpointsPoufsoufle{
+    background-color: rgba(253,172,43,0.8);
+}
+
+/*-----------------Reset Scores-----------------*/
+#resetbox{
+    text-align: start;
+}
+
+#resetPoints{
+    position: relative;
+    top: 470px;
+    left: 65px;
+    background-color: red;
+    border-color: rgb(202, 87, 67);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 4px rgb(99, 96, 96);
+    transition: box-shadow 800ms, font-size 800ms;
+}
+#resetPoints:hover{
+    font-size: 1.22rem;
+    box-shadow: 2px 7px 6px rgb(99, 96, 96);
+}
+.confirmResetVisible{
+    visibility: visible;
+    position: relative;
+    top: 370px;
+}
+.confirmResetHidden{
+    visibility: hidden;
+}
+#confirmReset{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#yes{
+    background-color: rgb(29, 116, 82);
+    margin-left: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.6rem;
+    box-shadow: 0px 4px 4px rgb(99, 96, 96);
+}
+#no{
+    background-color: red;
+    margin-left: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.6rem;
+    box-shadow: 0px 4px 4px rgb(99, 96, 96);
+}
+#footer{
+    height: 470px;
+}
+
+/*==========================Version Boutons=====================*/
+/*.minus{
+    width: 38px;
+    font-size: 0.8rem;
+    border-radius: 30px;
+    background-color: rgb(221, 193, 150);
+    border: 2px solid rgb(158, 100, 13);
+    font-weight: bold;
+}
+.plus{
+    width: 38px;
+    font-size: 0.8rem;
+    border-radius: 30px;
+    background-color: rgb(221, 193, 150);
+    border: 2px solid rgb(28, 110, 46);
+    font-weight: bold;
+}
+.minus1{
+    position: relative;
+    bottom: 160px;
+    right: 35px;
+    cursor: pointer;
+}
+.minus10{
+    position: relative;
+    bottom: 115px;
+    right: 78px;
+    cursor: pointer;
+}
+.plus1{
+    position: relative;
+    bottom: 160px;
+    left: 78px;
+    cursor: pointer;
+}
+.plus10{
+    position: relative;
+    bottom: 115px;
+    left: 35px;
+    cursor: pointer;
+}*/

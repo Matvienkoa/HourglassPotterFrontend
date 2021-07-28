@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Points</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="pagePoints">
+        <div class="container-fluid" id="bloc2">
+            <div class="row" id="template">
+                <div class="col-3 sablier">
+                    <div>
+                        <img src="images/serpentard.png" class="blason"/>
+                    </div>
+                    <div class="hourglass">
+                        <img id="png" src="images/SablierSerpentard.png">
+                        <progress id="avancementSerpentard" max="2000" min="0"></progress>
+                    </div>
+                    <div class="total-points">
+                        <img src="images/parchemin.png" class="parchemin"/>
+                        <p id="serpentardPoints"></p>
+                        <!--<input type="button" onclick="modifSerpentard(-1);" value="- 1" class="minus1 minus" id="serpentardminus1">
+                        <input type="button" onclick="modifSerpentard(-10);" value="- 10" class="minus10 minus" id="serpentardminus10">
+                        <input type="button" onclick="modifSerpentard(1);" value="+ 1" class="plus1 plus" id="serpentardplus1">
+                        <input type="button" onclick="modifSerpentard(10);" value="+ 10" class="plus10 plus" id="serpentardplus10">-->
+                    </div>
+                    <div class="attributePoints">
+                        <input type="number" name="points" id="numberpointsSerpentard" class="inputnumber">
+                        <input type="button" onclick="sendpointstoSerpentard();" value="Attribuer les Points" id="validpointsSerpentard" class="btnnumber">
+                    </div>
+                </div>
+                <div class="col-3 sablier">
+                    <div>
+                        <img src="images/serdaigle.png" class="blason"/>
+                    </div>
+                    <div class="hourglass">
+                        <img id="png" src="images/SablierSerdaigle.png">
+                        <progress id="avancementSerdaigle" max="2000" min="0"></progress>
+                    </div>
+                    <div class="total-points">
+                        <img src="images/parchemin.png" class="parchemin"/>
+                        <p id="serdaiglePoints"></p>
+                        <!--<input type="button" onclick="modifSerdaigle(-1);" value="- 1" class="minus1 minus" id="serdaigleminus1">
+                        <input type="button" onclick="modifSerdaigle(-10);" value="- 10" class="minus10 minus" id="serdaigleminus10">
+                        <input type="button" onclick="modifSerdaigle(1);" value="+ 1" class="plus1 plus" id="serdaigleplus1">
+                        <input type="button" onclick="modifSerdaigle(10);" value="+ 10" class="plus10 plus" id="serdaigleplus10">-->
+                    </div>
+                    <div class="attributePoints">
+                        <input type="number" name="points" id="numberpointsSerdaigle" class="inputnumber">
+                        <input type="button" onclick="sendpointstoSerdaigle();" value="Attribuer les Points" id="validpointsSerdaigle" class="btnnumber">
+                    </div>
+                </div>
+                <div class="col-3 sablier">
+                    <div >
+                        <img src="images/gryffondor.png" class="blason"/>
+                    </div>
+                    <div class="hourglass">
+                        <img id="png" src="images/SablierGryffondor.png">
+                        <progress id="avancementGryffondor" max="2000" min="0"></progress>
+                    </div>
+                    <div class="total-points">
+                        <img src="images/parchemin.png" class="parchemin"/>
+                        <p id="gryffondorPoints"></p>
+                        <!--<input type="button" onclick="modifGryffondor(-1);" value="- 1" class="minus1 minus" id="gryffondorminus1">
+                        <input type="button" onclick="modifGryffondor(-10);" value="- 10" class="minus10 minus" id="gryffondorminus10">
+                        <input type="button" onclick="modifGryffondor(1);" value="+ 1" class="plus1 plus" id="gryffondorplus1">
+                        <input type="button" onclick="modifGryffondor(10);" value="+ 10" class="plus10 plus" id="gryffondorplus10">-->
+                    </div>
+                    <div class="attributePoints">
+                        <input type="number" name="points" id="numberpointsGryffondor" class="inputnumber">
+                        <input type="button" onclick="sendpointstoGryffondor();" value="Attribuer les Points" id="validpointsGryffondor" class="btnnumber">
+                    </div>
+                </div>
+                <div class="col-3 sablier">
+                    <div>
+                    <img src="images/poufsoufle.png" class="blason"/>
+                    </div>
+                    <div class="hourglass">
+                        <img id="png" src="images/SablierPoufsoufle.png">
+                        <progress id="avancementPoufsoufle" max="2000" min="0"></progress>
+                    </div>
+                    <div class="total-points">
+                        <img src="images/parchemin.png" class="parchemin"/>
+                        <p id="poufsouflePoints"></p>
+                        <!--<input type="button" onclick="modifPoufsoufle(-1);" value="- 1" class="minus1 minus" id="poufsoufleminus1">
+                        <input type="button" onclick="modifPoufsoufle(-10);" value="- 10" class="minus10 minus" id="poufsoufleminus10">
+                        <input type="button" onclick="modifPoufsoufle(1);" value="+ 1" class="plus1 plus" id="poufsoufleplus1">
+                        <input type="button" onclick="modifPoufsoufle(10);" value="+ 10" class="plus10 plus" id="poufsoufleplus10">-->
+                    </div>
+                    <div class="attributePoints">
+                        <input type="number" name="points" id="numberpointsPoufsoufle" class="inputnumber">
+                        <input type="button" onclick="sendpointstoPoufsoufle();" value="Attribuer les points" id="validpointsPoufsoufle" class="btnnumber">
+                    </div>
+                </div>
+            </div>
+            <div id="resetbox">
+                <input type="button" onclick="showConfirm();" value="Réinitialiser tous les Points" id="resetPoints">
+            </div>
+            <div id="confirmReset" class="confirmResetHidden">
+                Maître Teddy, es-tu certain de vouloir réinitialiser à 0 les points des 4 Maisons?
+                <input type="button" onclick="resetPoints();" value="Oui" id="yes">
+                <input type="button" onclick="hideConfirm();" value="Non" id="no">
+            </div>
+            <div id="footer"></div>
+        </div>
+        <script src="points.js"></script>
+    </body>
+</html>
