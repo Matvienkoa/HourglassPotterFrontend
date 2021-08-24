@@ -16,7 +16,7 @@ function login() {
             console.log(data.token)
             localStorage.setItem("token", data.token);
             if(data.token) {
-                window.location.href = `points.html`
+                window.location.href = `https://matvienkoa.github.io/HourglassPotterFrontend/points`
             }
         })
 };
