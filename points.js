@@ -1,7 +1,14 @@
-const serpentardPoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Serpentard`);
-const serdaiglePoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Serdaigle`);
-const gryffondorPoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Gryffondor`);
-const poufsouflePoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Poufsoufle`);
+const token = localStorage.getItem("token");
+const jwt = {
+    headers: {
+        "Authorization": "Bearer " + token,
+    },
+};
+
+const serpentardPoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Serpentard`, jwt);
+const serdaiglePoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Serdaigle`, jwt);
+const gryffondorPoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Gryffondor`, jwt);
+const poufsouflePoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Poufsoufle`, jwt);
 
 const avaSerpentard = document.getElementById("avancementSerpentard");
 const avaSerdaigle = document.getElementById("avancementSerdaigle");
@@ -84,6 +91,7 @@ function resetSerpentardPoints() {
         method: "PUT",
         body: JSON.stringify(serpentardPoints),
         headers: {
+            "Authorization": "Bearer " + token,
             "Content-Type": "application/json; charset=utf-8"
         },
     }
@@ -100,6 +108,7 @@ function resetSerdaiglePoints() {
         method: "PUT",
         body: JSON.stringify(serdaiglePoints),
         headers: {
+            "Authorization": "Bearer " + token,
             "Content-Type": "application/json; charset=utf-8"
         },
     }
@@ -116,6 +125,7 @@ function resetGryffondorPoints() {
         method: "PUT",
         body: JSON.stringify(gryffondorPoints),
         headers: {
+            "Authorization": "Bearer " + token,
             "Content-Type": "application/json; charset=utf-8"
         },
     }
@@ -132,6 +142,7 @@ function resetPoufsouflePoints() {
         method: "PUT",
         body: JSON.stringify(poufsouflePoints),
         headers: {
+            "Authorization": "Bearer " + token,
             "Content-Type": "application/json; charset=utf-8"
         },
     }
@@ -164,6 +175,13 @@ function modifPoufsoufle(val) {
     if((avaPoufsoufle.value+val)<=avaPoufsoufle.max && (avaPoufsoufle.value+val)>0) {
         avaPoufsoufle.value += val;
     }
+}
+
+//==================================== Animation Remplissage Sabliers ====================================//
+
+function logOut() {
+    localStorage.removeItem("token");
+    window.location.href = `${window.location.origin}/index.html`
 }
 
 //============================== Gestion des Points ================================//
@@ -275,6 +293,7 @@ function sendpointstoSerpentard() {
         method: "PUT",
         body: JSON.stringify(sendpoints),
         headers: {
+            "Authorization": "Bearer " + token,
             "Content-Type": "application/json; charset=utf-8"
         },
     }
@@ -393,6 +412,7 @@ function sendpointstoSerdaigle() {
         method: "PUT",
         body: JSON.stringify(sendpoints),
         headers: {
+            "Authorization": "Bearer " + token,
             "Content-Type": "application/json; charset=utf-8"
         },
     }
@@ -511,6 +531,7 @@ function sendpointstoGryffondor() {
         method: "PUT",
         body: JSON.stringify(sendpoints),
         headers: {
+            "Authorization": "Bearer " + token,
             "Content-Type": "application/json; charset=utf-8"
         },
     }
@@ -629,6 +650,7 @@ function sendpointstoPoufsoufle() {
         method: "PUT",
         body: JSON.stringify(sendpoints),
         headers: {
+            "Authorization": "Bearer " + token,
             "Content-Type": "application/json; charset=utf-8"
         },
     }

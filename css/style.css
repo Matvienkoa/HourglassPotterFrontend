@@ -14,18 +14,33 @@
     text-align: center;
 }
 
-.enter{
+#form-login{
+    position: relative;
+    top: 30%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: -25px;
+}
+
+label{
+    color: rgb(80, 68, 13);
+    font-size: 1.4rem;
+    margin-left: 40px;
+    margin-right: 15px;
+}
+
+#enterbtn{
     font-family: 'proclamate_lightlight';
     color: white;
     position: relative;
-    top: 35%;
+    top: 40%;
     font-size: 7rem;
     background-color: transparent;
     border: none;
     transition: color 1300ms, font-size 1000ms;
 }
 
-.enter:hover {
+#enterbtn:hover {
     color: rgb(80, 68, 13);
     font-size: 8rem;
 }
@@ -260,7 +275,7 @@ input{
     position: relative;
     top: 470px;
     left: 65px;
-    background-color: red;
+    background-color: rgb(238, 104, 15);
     border-color: rgb(202, 87, 67);
     border-radius: 10px;
     color: white;
@@ -302,6 +317,25 @@ input{
 }
 #footer{
     height: 470px;
+}
+
+/*-----------------Logout-----------------*/
+
+#logout{
+    position: relative;
+    top: 470px;
+    left: 100px;
+    background-color: red;
+    border-color: rgb(202, 87, 67);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 4px rgb(99, 96, 96);
+    transition: box-shadow 800ms, font-size 800ms;
+}
+#logout:hover{
+    font-size: 1.22rem;
+    box-shadow: 2px 7px 6px rgb(99, 96, 96);
 }
 
 /*==========================Version Boutons=====================*/
