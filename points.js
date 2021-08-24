@@ -177,11 +177,11 @@ function modifPoufsoufle(val) {
     }
 }
 
-//==================================== Animation Remplissage Sabliers ====================================//
+//==================================== Logout ====================================//
 
 function logOut() {
     localStorage.removeItem("token");
-    window.location.href = `https://matvienkoa.github.io/HourglassPotterFrontend/`
+    window.location.href = `https://matvienkoa.github.io/HourglassPotterFrontend/index`
 }
 
 //============================== Gestion des Points ================================//
