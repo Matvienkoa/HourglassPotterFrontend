@@ -181,7 +181,7 @@ function modifPoufsoufle(val) {
 
 function logOut() {
     localStorage.removeItem("token");
-    window.location.href = `${window.location.origin}/index.html`
+    window.location.href = `https://matvienkoa.github.io/HourglassPotterFrontend/`
 }
 
 //============================== Gestion des Points ================================//
