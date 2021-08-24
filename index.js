@@ -16,7 +16,7 @@ function login() {
             console.log(data.token)
             localStorage.setItem("token", data.token);
             if(data.token) {
-                window.location.href = `${window.location.origin}/points.html`
+                window.location.href = `points.html`
             }
         })
 };
