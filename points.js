@@ -1,3 +1,4 @@
+//=======================Déclaration token pour headers requêtes==========================//
 const token = localStorage.getItem("token");
 const jwt = {
     headers: {
@@ -5,6 +6,7 @@ const jwt = {
     },
 };
 
+//=======================Affichage des points sur parchemins==========================//
 const serpentardPoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Serpentard`, jwt);
 const serdaiglePoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Serdaigle`, jwt);
 const gryffondorPoints = fetch(`https://hourglass-hp.herokuapp.com/api/maisons/Gryffondor`, jwt);
@@ -21,18 +23,13 @@ const pointsGryffondor = document.getElementById("gryffondorPoints")
 const pointsPoufsoufle = document.getElementById("poufsouflePoints")
 
 //=======================Affichage des points sur parchemins==========================//
-showSerpentardPoint();
-
-
 // Serpentar
-function showSerpentardPoint() {
-    serpentardPoints.catch(() => {alert(error)})
-        .then((res) => res.json())
-        .then((serpentard) => {
-            document.getElementById("serpentardPoints").textContent = serpentard.points;
-            avaSerpentard.value = serpentard.points;
-        });
-}   
+serpentardPoints.catch(() => {alert(error)})
+    .then((res) => res.json())
+    .then((serpentard) => {
+         document.getElementById("serpentardPoints").textContent = serpentard.points;
+        avaSerpentard.value = serpentard.points;
+    });
 
 // Serdaigle
 serdaiglePoints.catch(() => {alert(error)})
@@ -59,7 +56,6 @@ poufsouflePoints.catch(() => {alert(error)})
     });
 
 //==================================== Show / Hide Confirm Reset ===============================//
-
 function showConfirm() {
     const div = document.getElementById("confirmReset");
     div.classList.replace("confirmResetHidden", "confirmResetVisible");
@@ -71,7 +67,6 @@ function hideConfirm() {
 }
 
 //==================================== Reset Points =====================================//
-
 // All Points
 function resetPoints() {
     resetSerpentardPoints();
@@ -152,7 +147,6 @@ function resetPoufsouflePoints() {
 
 
 //==================================== Animation Remplissage Sabliers ====================================//
-
 function modifSerpentard(val) {
     if((avaSerpentard.value+val)<=avaSerpentard.max && (avaSerpentard.value+val)>0) {
         avaSerpentard.value += val;
@@ -178,18 +172,14 @@ function modifPoufsoufle(val) {
 }
 
 //==================================== Logout ====================================//
-
 function logOut() {
     localStorage.removeItem("token");
     window.location.href = `https://matvienkoa.github.io/HourglassPotterFrontend`
 }
 
 //============================== Gestion des Points ================================//
-
 //===========================Serpentard===========================//
-
 /*//===========================Boutons===========================//
-
 // Ajout d'un point à Serpentard
 document.getElementById("serpentardplus1").addEventListener("click", (e) => {
     e.preventDefault();
@@ -306,9 +296,7 @@ function sendpointstoSerpentard() {
 
 
 //=====================================Serdaigle================================//
-
 /*//===========================Boutons===========================//
-
 // Ajout d'un point à Serdaigle
 document.getElementById("serdaigleplus1").addEventListener("click", (e) => {
     e.preventDefault();
@@ -425,9 +413,7 @@ function sendpointstoSerdaigle() {
 
 
 //=====================================Gryffondor================================//
-
 /*//===========================Boutons===========================//
-
 // Ajout d'un point à Gryffondor
 document.getElementById("gryffondorplus1").addEventListener("click", (e) => {
     e.preventDefault();
@@ -544,9 +530,7 @@ function sendpointstoGryffondor() {
 
 
 //=====================================Poufsoufle================================//
-
 /*//===========================Boutons===========================//
-
 // Ajout d'un point à Poufsoufle
 document.getElementById("poufsoufleplus1").addEventListener("click", (e) => {
     e.preventDefault();
