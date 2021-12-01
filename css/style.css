@@ -101,7 +101,7 @@ label{
 .winner-serp{
     width: 80%;
     height: 70%;
-    background-image: url('images/winserpentard.webp');
+    background-image: url('/images/winserpentard.webp');
     background-position: top center;
     background-size: cover;
     position: absolute;
@@ -150,7 +150,7 @@ label{
 .winner-serd{
     width: 80%;
     height: 70%;
-    background-image: url('images/winserdaigle.jpg');
+    background-image: url('/images/winserdaigle.jpg');
     background-position: top center;
     background-size: cover;
     position: absolute;
@@ -199,7 +199,7 @@ label{
 .winner-gry{
     width: 80%;
     height: 70%;
-    background-image: url('images/wingryffondor.jpg');
+    background-image: url('/images/wingryffondor.jpg');
     background-position: top center;
     background-size: cover;
     position: absolute;
@@ -246,7 +246,7 @@ label{
 .winner-pou{
     width: 80%;
     height: 70%;
-    background-image: url('images/winpoufsoufle.jpg');
+    background-image: url('/images/winpoufsoufle.jpg');
     background-position: top center;
     background-size: cover;
     position: absolute;
