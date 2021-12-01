@@ -644,3 +644,62 @@ function sendpointstoPoufsoufle() {
     document.getElementById("numberpointsPoufsoufle").value = ""
     window.location.reload(true);
 }
+
+//==============================Show Winner==============================//
+function hideWinner() {
+    window.location.reload(true);
+}
+
+function showWinner() {
+    const serpPoints = parseInt(document.getElementById("serpentardPoints").textContent);
+    console.log(serpPoints);
+    const serdPoints = parseInt(document.getElementById("serdaiglePoints").textContent);
+    console.log(serdPoints);
+    const gryPoints = parseInt(document.getElementById("gryffondorPoints").textContent);
+    console.log(gryPoints);
+    const pouPoints = parseInt(document.getElementById("poufsouflePoints").textContent);
+    console.log(pouPoints);
+
+    // const serpPoints = 14;
+    // const serdPoints = 20;
+    // const gryPoints = 23;
+    // const pouPoints = 45;
+
+
+    if(serpPoints > serdPoints && serpPoints > gryPoints && serpPoints > pouPoints) {
+        const winnerBox = document.createElement('div');
+        winnerBox.className = "winner-serp";
+        winnerBox.innerHTML = 
+        "<span id='winner-close-serp' onclick='hideWinner();'>X</span>" + 
+        "<h1 id='title-serp'>Félicitation</h1>" +
+        "<div id='img-box'><img src='images/serpentard.png' id='serp-logo' /><p>Gagne avec<br> <span id='span-points'>" + serpPoints + "</span> points</p></div>";
+        document.getElementById("pagePoints").appendChild(winnerBox);
+    }
+    if(serdPoints > serpPoints && serdPoints > gryPoints && serdPoints > pouPoints) {
+        const winnerBox = document.createElement('div');
+        winnerBox.className = "winner-serd";
+        winnerBox.innerHTML = 
+        "<span id='winner-close-serd' onclick='hideWinner();'>X</span>" + 
+        "<h1 id='title-serd'>Félicitation</h1>" +
+        "<div id='img-box'><img src='images/serdaigle.png' id='serd-logo' /><p>Gagne avec<br> <span id='span-points'>" + serdPoints + "</span> points</p></div>";
+        document.getElementById("pagePoints").appendChild(winnerBox);
+    }
+    if(gryPoints > serpPoints && gryPoints > serdPoints && gryPoints > pouPoints) {
+        const winnerBox = document.createElement('div');
+        winnerBox.className = "winner-gry";
+        winnerBox.innerHTML = 
+        "<span id='winner-close-gry' onclick='hideWinner();'>X</span>" + 
+        "<h1 id='title-gry'>Félicitation</h1>" +
+        "<div id='img-box'><img src='images/gryffondor.png' id='gry-logo' /><p>Gagne avec<br> <span id='span-points'>" + gryPoints + "</span> points</p></div>";
+        document.getElementById("pagePoints").appendChild(winnerBox);
+    }
+    if(pouPoints > serpPoints && pouPoints > serdPoints && pouPoints > gryPoints) {
+        const winnerBox = document.createElement('div');
+        winnerBox.className = "winner-pou";
+        winnerBox.innerHTML = 
+        "<span id='winner-close-pou' onclick='hideWinner();'>X</span>" + 
+        "<h1 id='title-pou'>Félicitation</h1>" +
+        "<div id='img-box'><img src='images/poufsoufle.png' id='pou-logo' /><p>Gagne avec<br> <span id='span-points'>" + pouPoints + "</span> points</p></div>";
+        document.getElementById("pagePoints").appendChild(winnerBox);
+    }
+}
