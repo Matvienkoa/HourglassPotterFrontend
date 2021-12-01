@@ -672,7 +672,7 @@ function showWinner() {
         winnerBox.innerHTML = 
         "<span id='winner-close-serp' onclick='hideWinner();'>X</span>" + 
         "<h1 id='title-serp'>Félicitation</h1>" +
-        "<div id='img-box'><img src='images/serpentard.webp' id='serp-logo' /><p>Gagne avec<br> <span id='span-points'>" + serpPoints + "</span> points</p></div>";
+        "<div id='img-box'><img src='images/serpentard.png' id='serp-logo' /><p>Gagne avec<br> <span id='span-points'>" + serpPoints + "</span> points</p></div>";
         document.getElementById("pagePoints").appendChild(winnerBox);
     }
     if(serdPoints > serpPoints && serdPoints > gryPoints && serdPoints > pouPoints) {
