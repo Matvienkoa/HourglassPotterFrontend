@@ -672,7 +672,7 @@ function showWinner() {
         winnerBox.innerHTML = 
         "<span id='winner-close-serp' onclick='hideWinner();'>X</span>" + 
         "<h1 id='title-serp'>Félicitation</h1>" +
-        "<div id='img-box'><img src='./images/serpentard.png' id='serp-logo' /><p>Gagne avec<br> <span id='span-points'>" + serpPoints + "</span> points</p></div>";
+        "<div id='img-box'><img src='images/serpentard.webp' id='serp-logo' /><p>Gagne avec<br> <span id='span-points'>" + serpPoints + "</span> points</p></div>";
         document.getElementById("pagePoints").appendChild(winnerBox);
     }
     if(serdPoints > serpPoints && serdPoints > gryPoints && serdPoints > pouPoints) {
@@ -681,7 +681,7 @@ function showWinner() {
         winnerBox.innerHTML = 
         "<span id='winner-close-serd' onclick='hideWinner();'>X</span>" + 
         "<h1 id='title-serd'>Félicitation</h1>" +
-        "<div id='img-box'><img src='./images/serdaigle.png' id='serd-logo' /><p>Gagne avec<br> <span id='span-points'>" + serdPoints + "</span> points</p></div>";
+        "<div id='img-box'><img src='images/serdaigle.png' id='serd-logo' /><p>Gagne avec<br> <span id='span-points'>" + serdPoints + "</span> points</p></div>";
         document.getElementById("pagePoints").appendChild(winnerBox);
     }
     if(gryPoints > serpPoints && gryPoints > serdPoints && gryPoints > pouPoints) {
@@ -690,7 +690,7 @@ function showWinner() {
         winnerBox.innerHTML = 
         "<span id='winner-close-gry' onclick='hideWinner();'>X</span>" + 
         "<h1 id='title-gry'>Félicitation</h1>" +
-        "<div id='img-box'><img src='./images/gryffondor.png' id='gry-logo' /><p>Gagne avec<br> <span id='span-points'>" + gryPoints + "</span> points</p></div>";
+        "<div id='img-box'><img src='images/gryffondor.png' id='gry-logo' /><p>Gagne avec<br> <span id='span-points'>" + gryPoints + "</span> points</p></div>";
         document.getElementById("pagePoints").appendChild(winnerBox);
     }
     if(pouPoints > serpPoints && pouPoints > serdPoints && pouPoints > gryPoints) {
@@ -699,7 +699,7 @@ function showWinner() {
         winnerBox.innerHTML = 
         "<span id='winner-close-pou' onclick='hideWinner();'>X</span>" + 
         "<h1 id='title-pou'>Félicitation</h1>" +
-        "<div id='img-box'><img src='./images/poufsoufle.png' id='pou-logo' /><p>Gagne avec<br> <span id='span-points'>" + pouPoints + "</span> points</p></div>";
+        "<div id='img-box'><img src='images/poufsoufle.png' id='pou-logo' /><p>Gagne avec<br> <span id='span-points'>" + pouPoints + "</span> points</p></div>";
         document.getElementById("pagePoints").appendChild(winnerBox);
     }
 }
