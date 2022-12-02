@@ -10,7 +10,7 @@ function login() {
                 "Content-Type": "application/json; charset=utf-8",
             },
         }
-        fetch(`https://hourglass-hp.herokuapp.com/api/auth/login`, myInit)
+        fetch(`https://bicx1234.odns.fr/hp/api/auth/login`, myInit)
         .then(res => res.json())
         .then(data => {
             console.log(data.token)
