@@ -7,10 +7,10 @@ const jwt = {
 };
 
 //=======================Affichage des points sur parchemins==========================//
-const serpentardPoints = fetch(`https://bicx1234.odns.fr/hp/api/maisons/Serpentard`, jwt);
-const serdaiglePoints = fetch(`https://bicx1234.odns.fr/hp/api/maisons/Serdaigle`, jwt);
-const gryffondorPoints = fetch(`https://bicx1234.odns.fr/hp/api/maisons/Gryffondor`, jwt);
-const poufsouflePoints = fetch(`https://bicx1234.odns.fr/hp/api/maisons/Poufsoufle`, jwt);
+const serpentardPoints = fetch(`https://test-wc.fr/api/maisons/Serpentard`, jwt);
+const serdaiglePoints = fetch(`https://test-wc.fr/api/maisons/Serdaigle`, jwt);
+const gryffondorPoints = fetch(`https://test-wc.fr/api/maisons/Gryffondor`, jwt);
+const poufsouflePoints = fetch(`https://test-wc.fr/api/maisons/Poufsoufle`, jwt);
 
 const avaSerpentard = document.getElementById("avancementSerpentard");
 const avaSerdaigle = document.getElementById("avancementSerdaigle");
@@ -90,7 +90,7 @@ function resetSerpentardPoints() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch(`https://bicx1234.odns.fr/hp/api/maisons/Serpentard/resetPoints`, myInit)
+    fetch(`https://test-wc.fr/api/maisons/Serpentard/resetPoints`, myInit)
     .catch(() => {alert(error)})
 }
 
@@ -107,7 +107,7 @@ function resetSerdaiglePoints() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch(`https://bicx1234.odns.fr/hp/api/maisons/Serdaigle/resetPoints`, myInit)
+    fetch(`https://test-wc.fr/api/maisons/Serdaigle/resetPoints`, myInit)
     .catch(() => {alert(error)})
 }
 
@@ -124,7 +124,7 @@ function resetGryffondorPoints() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch(`https://bicx1234.odns.fr/hp/api/maisons/Gryffondor/resetPoints`, myInit)
+    fetch(`https://test-wc.fr/api/maisons/Gryffondor/resetPoints`, myInit)
     .catch(() => {alert(error)})
 }
 
@@ -141,7 +141,7 @@ function resetPoufsouflePoints() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch(`https://bicx1234.odns.fr/hp/api/maisons/Poufsoufle/resetPoints`, myInit)
+    fetch(`https://test-wc.fr/api/maisons/Poufsoufle/resetPoints`, myInit)
     .catch(() => {alert(error)})
 }
 
@@ -198,7 +198,7 @@ function serpentardPlus1() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serpentard/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serpentard/givePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -221,7 +221,7 @@ function serpentardPlus10() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serpentard/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serpentard/givePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -244,7 +244,7 @@ function serpentardMinus1() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serpentard/losePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serpentard/losePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -267,7 +267,7 @@ function serpentardMinus10() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serpentard/losePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serpentard/losePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }*/
@@ -287,7 +287,7 @@ function sendpointstoSerpentard() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serpentard/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serpentard/givePoints', myInit)
     .catch(() => {alert(error)})
     window.alert("vos points ont été ajoutés")
     document.getElementById("numberpointsSerpentard").value = ""
@@ -315,7 +315,7 @@ function serdaiglePlus1() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serdaigle/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serdaigle/givePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -338,7 +338,7 @@ function serdaiglePlus10() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serdaigle/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serdaigle/givePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -361,7 +361,7 @@ function serdaigleMinus1() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serdaigle/losePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serdaigle/losePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -384,7 +384,7 @@ function serdaigleMinus10() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serdaigle/losePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serdaigle/losePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }*/
@@ -404,7 +404,7 @@ function sendpointstoSerdaigle() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Serdaigle/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Serdaigle/givePoints', myInit)
     .catch(() => {alert(error)})
     window.alert("vos points ont été ajoutés")
     document.getElementById("numberpointsSerdaigle").value = ""
@@ -432,7 +432,7 @@ function gryffondorPlus1() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Gryffondor/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Gryffondor/givePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -455,7 +455,7 @@ function gryffondorPlus10() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Gryffondor/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Gryffondor/givePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -478,7 +478,7 @@ function gryffondorMinus1() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Gryffondor/losePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Gryffondor/losePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -501,7 +501,7 @@ function gryffondorMinus10() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Gryffondor/losePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Gryffondor/losePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }*/
@@ -521,7 +521,7 @@ function sendpointstoGryffondor() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Gryffondor/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Gryffondor/givePoints', myInit)
     .catch(() => {alert(error)})
     window.alert("vos points ont été ajoutés")
     document.getElementById("numberpointsGryffondor").value = ""
@@ -549,7 +549,7 @@ function poufsouflePlus1() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Poufsoufle/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Poufsoufle/givePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -572,7 +572,7 @@ function poufsouflePlus10() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Poufsoufle/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Poufsoufle/givePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -595,7 +595,7 @@ function poufsoufleMinus1() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Poufsoufle/losePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Poufsoufle/losePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }
@@ -618,7 +618,7 @@ function poufsoufleMinus10() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Poufsoufle/losePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Poufsoufle/losePoints', myInit)
     .catch(() => {alert(error)})
     window.location.reload(true);
 }*/
@@ -638,7 +638,7 @@ function sendpointstoPoufsoufle() {
             "Content-Type": "application/json; charset=utf-8"
         },
     }
-    fetch('https://bicx1234.odns.fr/hp/api/maisons/Poufsoufle/givePoints', myInit)
+    fetch('https://test-wc.fr/api/maisons/Poufsoufle/givePoints', myInit)
     .catch(() => {alert(error)})
     window.alert("vos points ont été ajoutés")
     document.getElementById("numberpointsPoufsoufle").value = ""
