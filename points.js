@@ -275,10 +275,9 @@ function serpentardMinus10() {
 //==============================Input==============================//
 function sendpointstoSerpentard() {
     const sendpoints = {
-        points: document.getElementById("numberpointsSerpentard").value,
-        name: "Serpentard"
+        points: document.getElementById("numberpointsSerpentard").value
     };
-    
+
     const myInit = {
         method: "PUT",
         body: JSON.stringify(sendpoints),
