@@ -25,9 +25,6 @@ Login avec JWT.
 
 ## Technologies
 
-Backend hébergé sur Heroku : NodeJS, Express<br/>
+NodeJS, Express<br/>
 DB : MongoDB<br/>
 Frontend : HTML, CSS, JS<br/>
-
-
-## Enjoy ^^
